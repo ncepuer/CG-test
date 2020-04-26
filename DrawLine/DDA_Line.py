@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-def DDA(x0,y0,x1,y1):
-    plt.axis([x0,x1,y0,y1])
+def DDA_Line(x0, y0, x1, y1):
+    plt.axis('square')
     plt.title("DDA_Line")
     plt.xticks(np.arange(x0,x1+0.1,1))
     plt.yticks(np.arange(y0,y1+0.1,0.5))
@@ -16,4 +16,5 @@ def DDA(x0,y0,x1,y1):
         x=x+1; y=y+k
     plt.show()
     return
-DDA(0,0,16,9)
+
+DDA_Line(0, 0, 16, 9)
