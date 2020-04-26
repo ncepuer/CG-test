@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 
 def DDA(x0,y0,x1,y1):
     plt.axis([x0,x1,y0,y1])
+    plt.title("DDA_Line")
     plt.xticks(np.arange(x0,x1+0.1,1))
     plt.yticks(np.arange(y0,y1+0.1,0.5))
     plt.grid()
