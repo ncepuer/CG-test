@@ -51,7 +51,7 @@ def getpoint(x0, y0, x1, y1, XL, XR, YB, YT):
 x0 = 3
 y0 = 1
 x1 = 13
-y1 = 8  # 待裁剪的线段
+y1 = 8  # 线段
 x = [4, 11, 11, 4, 4]
 y = [2, 2, 7, 7, 2]  # 裁剪窗口
 XL = min(x)
@@ -69,7 +69,7 @@ plt.xticks(np.arange(xmin - 1, xmax + 1.1, 1))
 plt.yticks(np.arange(ymin - 1, ymax + 1.1, 1))
 plt.grid()
 plt.plot(x, y, color='g', linewidth=2, linestyle="-")
-plt.plot([x0, x1], [y0, y1], color='b', linewidth=1, linestyle="-")
+plt.plot([x0, x1], [y0, y1], color='b', linewidth=1, linestyle="-") # 画出原始直线和裁剪窗口
 
 [x0_, y0_, flag] = getpoint(x0, y0, x1, y1, XL, XR, YB, YT)
 if flag != False:
