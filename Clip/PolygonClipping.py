@@ -44,12 +44,12 @@ def PolygonClipping():
     xmax = math.ceil(max(max(xp), max(xw)))
     ymin = int(min(min(yp), min(yw)))
     ymax = math.ceil(max(max(yp), max(yw)))
-    name = ["PolygonClipping","Bottom","Right","Up","Left"]
+    name = ["PolygonClipping", "Bottom", "Right", "Up", "Left"]
 
-    for i in range(1,6,1):
-        plt.subplot(2,3,i)
+    for i in range(1, 6, 1):
+        plt.subplot(2, 3, i)
         plt.axis('square')
-        plt.title(name[i-1])
+        plt.title(name[i - 1])
         plt.xticks(np.arange(xmin - 1, xmax + 1.1, 1))
         plt.yticks(np.arange(ymin - 1, ymax + 1.1, 1))
         plt.grid()
@@ -90,8 +90,8 @@ def PolygonClipping():
         iX = oX
         iY = oY
 
-        for k in range(i+2,6,1):
-            plt.subplot(2,3,k)
+        for k in range(i + 2, 6, 1):
+            plt.subplot(2, 3, k)
             plt.plot(oX, oY, color=color[i], linewidth=2, linestyle="-")  # 画出经一个边界裁剪后的多边形
 
     plt.show()
