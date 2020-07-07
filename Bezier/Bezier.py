@@ -9,7 +9,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def getpoint(x, y, t):  # 获取对应t值的Bezier曲线上的点的坐标
+def getpoint(x, y, t):  # 获取对应t值的Bezier曲线上的点的坐标的递归算法
     xr = []
     yr = []
     plen = len(x)
